@@ -35,6 +35,7 @@ $(document).ready(function(){
 	$('#fullpage').fullpage({
 		controlArrows: false,
 		verticalCentered: false,
+		autoScrolling: true,
 		loopHorizontal: false,
 		scrollBar: true,
 		navigation: true,
