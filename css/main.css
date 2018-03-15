@@ -278,7 +278,10 @@ main .bg {
   main .bg .sec_3 {
     color: #fff;
     position: relative;
-    height: 100vh; }
+    height: 100vh;
+    width: 301vw;
+    overflow: hidden;
+     }
     main .bg .sec_3 h2 {
       max-width: 500px;
       font-family: "Gotham", sans-serif;
@@ -405,8 +408,19 @@ main .bg {
               transform: translate(-144px, 77px) rotate(-40deg); }
       main .bg .sec_3 .arrow-downLeftItalic::after {
         width: 200px; }
+    main .bg .section {
+      overflow: hidden;
+    }
     main .bg .sec_3 .slide {
-      position: relative; }
+      position: relative;
+      height: 100vh;
+      width: 100vw;
+      display: inline-block;
+      vertical-align: top;
+      -webkit-transition: transform 1s ease-in-out;
+      -o-transition: transform 1s ease-in-out;
+      transition: transform 1s ease-in-out;
+       }
       main .bg .sec_3 .slide .acerock {
         position: absolute;
         background-repeat: no-repeat;
@@ -1067,7 +1081,7 @@ main .bg {
 #toggle_wrap {
   position: absolute;
   margin-left: 191px;
-  width: 63%;
+  width: 655px;
   bottom: 17px;
   height: 40px;
   cursor: pointer;
@@ -1084,13 +1098,82 @@ main .bg {
     font-family: "Gotham";
     color: #fff; }
 
+#fp-nav.right {
+  right: 17px;
+}
+
+#fp-nav {
+  position: fixed;
+  z-index: 3;
+  margin-top: -32px;
+  top: 50%;
+  opacity: 1;
+  -webkit-transform: translateZ(0);
+}
+
+#fp-nav ul li, 
+.fp-slidesNav ul li {
+  display: block;
+  width: 14px;
+  height: 13px;
+  margin: 7px;
+  position: relative;
+}
+
+#fp-nav ul li a,
+ .fp-slidesNav ul li a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#fp-nav ul li a.active span {
+    background-color: #f78b1f;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    height: 4px;
+    width: 4px;
+    border: 0;
+    background: #333;
+    left: 50%;
+    top: 50%;
+    margin: -2px 0 0 -2px;
+    transition: all .1s ease-in-out;
+}
+
+#fp-nav ul li a span {
+    background-color: #fff;
+    margin: -6px 0 0 -6px;
+    width: 12px;
+    height: 12px;
+}
+
+#fp-nav ul li:hover a.active span,
+#fp-nav ul li a.active span, 
+.fp-slidesNav ul li:hover a.active span, 
+.fp-slidesNav ul li a.active span {
+    height: 12px;
+    width: 12px;
+    margin: -6px 0 0 -6px;
+    border-radius: 100%;
+}
+
 input[type=range] {
   position: absolute;
   bottom: 60px;
   left: 195px;
   -webkit-appearance: none;
   margin: 18px 0;
-  width: 64.5%;
+  width: 655px;
   z-index: 999; }
 
 input[type=range]:focus {
