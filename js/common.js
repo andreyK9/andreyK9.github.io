@@ -66,6 +66,11 @@ window.onscroll = function() {
         toggleActiveClick(1);
     if(!fp_nav[2].classList.contains('active') && scrolled >= 1450 )
         toggleActiveClick(2);
+
+    if(scrolled > 0)
+        scrollDown.style.opacity = '0';
+    else
+        scrollDown.style.opacity = '1';
 }
 
 function toggleActiveClick(link_numb) {

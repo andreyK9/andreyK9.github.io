@@ -1059,9 +1059,9 @@ main .bg {
       font-size: 16px;
       color: #fff;
       position: relative;
-      -webkit-transition: all .1s ease-out;
-      -o-transition: all .1s ease-out;
-      transition: all .1s ease-out; }
+      -webkit-transition: all .3s ease-out;
+      -o-transition: all .3s ease-out;
+      transition: all .3s ease-out; }
       main .bg .scrollDown a:hover {
         background: -webkit-radial-gradient(center 68px, ellipse, #f78b1f 30%, transparent 60%);
         background: -o-radial-gradient(center 68px, ellipse, #f78b1f 30%, transparent 60%);
